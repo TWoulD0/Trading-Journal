@@ -507,68 +507,630 @@ tr.week-sep td{border-top:1px dashed rgba(94,129,244,.15)!important}
     </div>
 
     <!-- ══════ STRATEGY TAB ══════ -->
-    <div class="tab-content" id="tab-strategy">
-      <div class="page-header">
-        <div>
-          <div class="header-tag" style="background:var(--gold-dim);border-color:rgba(255,209,102,.25);color:var(--gold)">◈ Trading Strategy</div>
-          <h1>Gold <span style="background:linear-gradient(135deg,var(--gold),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">XAU/USD</span></h1>
-          <p class="page-sub">Price action setups, entry rules, and risk management for the $5→$1,000 journey.</p>
-        </div>
-      </div>
-      <div class="strat-intro">
-        <div class="strat-intro-card" style="border-color:rgba(255,209,102,.18)"><div class="strat-num gold" style="margin-bottom:10px;font-size:18px;width:36px;height:36px">◆</div><div class="sic-title">Why Gold?</div><div class="sic-body">XAU/USD offers high volatility, tight spreads in sessions, clear technical levels, and responds well to price action. Micro lots let you trade with small capital while keeping risk controlled.</div></div>
-        <div class="strat-intro-card" style="border-color:rgba(0,214,143,.15)"><div class="sic-icon">🎯</div><div class="sic-title">Core Philosophy</div><div class="sic-body">Wait for the market to come to you. Only trade at <strong style="color:var(--text)">key levels</strong> with a clear trigger. No trades in noise. One good setup per day beats three average ones.</div></div>
-        <div class="strat-intro-card" style="border-color:rgba(94,129,244,.15)"><div class="sic-icon">⚖️</div><div class="sic-title">Risk Per Trade</div><div class="sic-body">Risk <strong style="color:var(--text)">1–2% of capital</strong> per trade maximum. With $5, that's $0.05–$0.10 per trade. As capital grows, lot size scales up — never risk more than 2% regardless.</div></div>
-      </div>
-      <div class="strat-section">
-        <div class="strat-section-header"><div class="strat-num gold">1</div><div><div class="strat-sec-title">Market Structure</div><div class="strat-sec-sub">Always identify the trend before looking for entries</div></div></div>
-        <div class="two-col">
-          <div class="chart-card"><div class="chart-card-header"><div class="chart-card-title">Bullish Market Structure</div><span class="chart-card-badge badge-bull">UPTREND</span></div>
-            <svg class="chart-card-svg" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg"><rect width="480" height="220" fill="#0f1117"/><line x1="0" y1="55" x2="480" y2="55" stroke="rgba(255,255,255,0.04)" stroke-width="1"/><line x1="0" y1="110" x2="480" y2="110" stroke="rgba(255,255,255,0.04)" stroke-width="1"/><line x1="0" y1="165" x2="480" y2="165" stroke="rgba(255,255,255,0.04)" stroke-width="1"/><polyline points="30,185 70,155 100,165 145,125 175,138 225,95 255,110 305,68 335,82 385,42 415,55 460,22" fill="none" stroke="#00d68f" stroke-width="2.5"/><polygon points="30,185 70,155 100,165 145,125 175,138 225,95 255,110 305,68 335,82 385,42 415,55 460,22 460,200 30,200" fill="rgba(0,214,143,0.07)"/><circle cx="145" cy="125" r="4" fill="#00d68f"/><text x="148" y="118" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text><circle cx="225" cy="95" r="4" fill="#00d68f"/><text x="228" y="88" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text><circle cx="305" cy="68" r="4" fill="#00d68f"/><text x="308" y="61" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text><circle cx="385" cy="42" r="4" fill="#00d68f"/><text x="388" y="35" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text><circle cx="70" cy="155" r="4" fill="#5e81f4"/><text x="52" y="168" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text><circle cx="175" cy="138" r="4" fill="#5e81f4"/><text x="157" y="151" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text><circle cx="255" cy="110" r="4" fill="#5e81f4"/><text x="237" y="123" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text><circle cx="335" cy="82" r="4" fill="#5e81f4"/><text x="317" y="95" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text><line x1="40" y1="195" x2="450" y2="30" stroke="rgba(255,209,102,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/><text x="400" y="22" fill="rgba(255,209,102,0.6)" font-size="10" font-family="JetBrains Mono,monospace">TREND ↗</text></svg>
-            <div class="chart-card-desc"><strong>Higher Highs + Higher Lows = Uptrend.</strong> Only look for <strong>BUY</strong> setups. Each pullback to a Higher Low is a potential entry zone.</div></div>
-          <div class="chart-card"><div class="chart-card-header"><div class="chart-card-title">Bearish Market Structure</div><span class="chart-card-badge badge-bear">DOWNTREND</span></div>
-            <svg class="chart-card-svg" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg"><rect width="480" height="220" fill="#0f1117"/><line x1="0" y1="55" x2="480" y2="55" stroke="rgba(255,255,255,0.04)" stroke-width="1"/><line x1="0" y1="110" x2="480" y2="110" stroke="rgba(255,255,255,0.04)" stroke-width="1"/><line x1="0" y1="165" x2="480" y2="165" stroke="rgba(255,255,255,0.04)" stroke-width="1"/><polyline points="30,28 70,58 100,45 145,80 175,66 225,105 255,90 305,130 335,116 385,158 415,143 460,182" fill="none" stroke="#ff5252" stroke-width="2.5"/><polygon points="30,28 70,58 100,45 145,80 175,66 225,105 255,90 305,130 335,116 385,158 415,143 460,182 460,20 30,20" fill="rgba(255,82,82,0.06)"/><circle cx="145" cy="80" r="4" fill="#ff5252"/><text x="148" y="92" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text><circle cx="225" cy="105" r="4" fill="#ff5252"/><text x="228" y="117" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text><circle cx="305" cy="130" r="4" fill="#ff5252"/><text x="308" y="142" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text><circle cx="385" cy="158" r="4" fill="#ff5252"/><text x="388" y="170" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text><circle cx="70" cy="58" r="4" fill="#f5a623"/><text x="52" y="50" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text><circle cx="175" cy="66" r="4" fill="#f5a623"/><text x="157" y="58" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text><circle cx="255" cy="90" r="4" fill="#f5a623"/><text x="237" y="82" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text><circle cx="335" cy="116" r="4" fill="#f5a623"/><text x="317" y="108" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text><line x1="40" y1="22" x2="450" y2="190" stroke="rgba(255,82,82,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/><text x="380" y="200" fill="rgba(255,82,82,0.6)" font-size="10" font-family="JetBrains Mono,monospace">TREND ↘</text></svg>
-            <div class="chart-card-desc"><strong>Lower Highs + Lower Lows = Downtrend.</strong> Only look for <strong>SELL</strong> setups. Each bounce to a Lower High is a potential short entry.</div></div>
-        </div>
-      </div>
-      <div class="strat-section">
-        <div class="strat-section-header"><div class="strat-num red">4</div><div><div class="strat-sec-title">Risk Management</div><div class="strat-sec-sub">Protect the capital — this is what separates winners from losers</div></div></div>
-        <div class="rr-visual">
-          <div class="cl-title">Reward:Risk Ratio — Why 2:1 Minimum?</div>
-          <div style="font-size:12px;color:var(--text2);margin-bottom:14px;line-height:1.7">With a <strong style="color:var(--text)">2:1 R:R</strong>, you only need to win <strong style="color:var(--green)">34%</strong> of trades to break even. At 50% win rate you profit significantly.</div>
-          <div class="rr-bar-wrap"><div class="rr-loss-bar" style="flex:1">STOP LOSS · 1R</div><div class="rr-win-bar" style="flex:2">TAKE PROFIT · 2R</div></div>
-          <div class="rr-labels"><span>Entry</span><span>SL (−1R)</span><span style="margin-left:auto">TP (+2R)</span></div>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px">
-            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center"><div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">Win Rate Needed</div><div style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--green)">33%</div><div style="font-size:10px;color:var(--text3)">to break even @ 2:1</div></div>
-            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center"><div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">At 50% WR</div><div style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--gold)">+50%</div><div style="font-size:10px;color:var(--text3)">net gain per 10 trades</div></div>
-            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center"><div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">Max Risk / Trade</div><div style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--red)">2%</div><div style="font-size:10px;color:var(--text3)">of account capital</div></div>
-          </div>
-        </div>
-        <div class="rules-grid">
-          <div class="rule-card"><div class="rule-icon">🛑</div><div><div class="rule-title">Always Use a Stop Loss</div><div class="rule-body">Place SL immediately on entry. No exceptions. On Gold, minimum 15–20 pips above/below the level to avoid stop hunting.</div></div></div>
-          <div class="rule-card"><div class="rule-icon">🎯</div><div><div class="rule-title">Set TP Before Entry</div><div class="rule-body">Know your target before clicking Buy/Sell. Target the next key S/R level. Partial profit at 1:1, move SL to breakeven, let rest run.</div></div></div>
-          <div class="rule-card"><div class="rule-icon">🚫</div><div><div class="rule-title">Max 1 Trade at a Time</div><div class="rule-body">While account is under $100, only carry one open position. Overlapping trades compound drawdown.</div></div></div>
-          <div class="rule-card"><div class="rule-icon">📉</div><div><div class="rule-title">Daily Loss Limit</div><div class="rule-body">Stop trading after losing 3–5% of capital in one day. Come back tomorrow fresh. Revenge trading is the #1 account killer.</div></div></div>
-        </div>
-      </div>
-      <div class="strat-section">
-        <div class="strat-section-header"><div class="strat-num blue">6</div><div><div class="strat-sec-title">Pre-Trade Checklist</div><div class="strat-sec-sub">Run through every item before placing any order</div></div></div>
-        <div class="checklist">
-          <div class="cl-title">✅ All boxes must be checked before entering a trade</div>
-          <div class="cl-items">
-            <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>Trend identified</strong> — I know if Gold is in an uptrend, downtrend, or ranging on H1/H4</div></div>
-            <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>Key level present</strong> — My entry is at a clear S/R zone, not random in the middle</div></div>
-            <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>Setup confirmed</strong> — I see a Pin Bar, BnR, or Inside Bar pattern at the level</div></div>
-            <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>In correct session</strong> — I am trading during London or NY session (08:00–22:00 UTC)</div></div>
-            <div class="cl-item"><div class="cl-check risk">$</div><div class="cl-text"><strong>SL calculated</strong> — Stop loss is set beyond the level, sized to &lt;2% of capital</div></div>
-            <div class="cl-item"><div class="cl-check risk">$</div><div class="cl-text"><strong>TP set at 2:1+</strong> — Take profit is at next key level, minimum 2:1 reward-to-risk</div></div>
-            <div class="cl-item"><div class="cl-check risk">$</div><div class="cl-text"><strong>Lot size correct</strong> — Position sized so SL hit = &lt;2% loss</div></div>
-            <div class="cl-item"><div class="cl-check bear">✗</div><div class="cl-text"><strong>No daily limit hit</strong> — I have not lost more than 5% today. If yes: done for the day</div></div>
-          </div>
-        </div>
-        <p class="note" style="margin-top:0">Practice on a demo account until you can identify all setups consistently before trading real capital.</p>
+<div class="tab-content" id="tab-strategy">
+  <div class="page-header">
+    <div>
+      <div class="header-tag" style="background:var(--gold-dim);border-color:rgba(255,209,102,.25);color:var(--gold)">◈ Trading Strategy</div>
+      <h1>Gold <span style="background:linear-gradient(135deg,var(--gold),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">XAU/USD</span></h1>
+      <p class="page-sub">Price action setups, entry rules, and risk management for the $5→$1,000 journey.</p>
+    </div>
+  </div>
+
+  <!-- Intro cards -->
+  <div class="strat-intro">
+    <div class="strat-intro-card" style="border-color:rgba(255,209,102,.18)">
+      <div class="strat-num gold" style="margin-bottom:10px;font-size:18px;width:36px;height:36px">◆</div>
+      <div class="sic-title">Why Gold?</div>
+      <div class="sic-body">XAU/USD offers high volatility, tight spreads in sessions, clear technical levels, and responds well to price action. Micro lots let you trade with small capital while keeping risk controlled.</div>
+    </div>
+    <div class="strat-intro-card" style="border-color:rgba(0,214,143,.15)">
+      <div class="sic-icon">🎯</div>
+      <div class="sic-title">Core Philosophy</div>
+      <div class="sic-body">Wait for the market to come to you. Only trade at <strong style="color:var(--text)">key levels</strong> with a clear trigger. No trades in noise. One good setup per day beats three average ones.</div>
+    </div>
+    <div class="strat-intro-card" style="border-color:rgba(94,129,244,.15)">
+      <div class="sic-icon">⚖️</div>
+      <div class="sic-title">Risk Per Trade</div>
+      <div class="sic-body">Risk <strong style="color:var(--text)">1–2% of capital</strong> per trade maximum. With $5, that's $0.05–$0.10 per trade. As capital grows, lot size scales up — never risk more than 2% regardless.</div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 1: Market Structure ── -->
+  <div class="strat-section">
+    <div class="strat-section-header">
+      <div class="strat-num gold">1</div>
+      <div>
+        <div class="strat-sec-title">Market Structure</div>
+        <div class="strat-sec-sub">Always identify the trend before looking for entries</div>
       </div>
     </div>
+
+    <div class="two-col">
+      <!-- Bullish structure SVG -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">Bullish Market Structure</div>
+          <span class="chart-card-badge badge-bull">UPTREND</span>
+        </div>
+        <svg class="chart-card-svg" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="220" fill="#0f1117"/>
+          <!-- grid -->
+          <line x1="0" y1="55" x2="480" y2="55" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="0" y1="110" x2="480" y2="110" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="0" y1="165" x2="480" y2="165" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <!-- price path -->
+          <polyline points="30,185 70,155 100,165 145,125 175,138 225,95 255,110 305,68 335,82 385,42 415,55 460,22" fill="none" stroke="#00d68f" stroke-width="2.5"/>
+          <!-- fill under line -->
+          <polygon points="30,185 70,155 100,165 145,125 175,138 225,95 255,110 305,68 335,82 385,42 415,55 460,22 460,200 30,200" fill="rgba(0,214,143,0.07)"/>
+          <!-- HH labels -->
+          <circle cx="145" cy="125" r="4" fill="#00d68f"/>
+          <text x="148" y="118" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text>
+          <circle cx="225" cy="95" r="4" fill="#00d68f"/>
+          <text x="228" y="88" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text>
+          <circle cx="305" cy="68" r="4" fill="#00d68f"/>
+          <text x="308" y="61" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text>
+          <circle cx="385" cy="42" r="4" fill="#00d68f"/>
+          <text x="388" y="35" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HH</text>
+          <!-- HL labels -->
+          <circle cx="70" cy="155" r="4" fill="#5e81f4"/>
+          <text x="52" y="168" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text>
+          <circle cx="175" cy="138" r="4" fill="#5e81f4"/>
+          <text x="157" y="151" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text>
+          <circle cx="255" cy="110" r="4" fill="#5e81f4"/>
+          <text x="237" y="123" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text>
+          <circle cx="335" cy="82" r="4" fill="#5e81f4"/>
+          <text x="317" y="95" fill="#5e81f4" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">HL</text>
+          <!-- trend arrow -->
+          <line x1="40" y1="195" x2="450" y2="30" stroke="rgba(255,209,102,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <text x="400" y="22" fill="rgba(255,209,102,0.6)" font-size="10" font-family="JetBrains Mono,monospace">TREND ↗</text>
+        </svg>
+        <div class="chart-card-desc"><strong>Higher Highs + Higher Lows = Uptrend.</strong> Only look for <strong>BUY</strong> setups. Each pullback to a Higher Low is a potential entry zone. Do not sell against a confirmed uptrend.</div>
+      </div>
+
+      <!-- Bearish structure SVG -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">Bearish Market Structure</div>
+          <span class="chart-card-badge badge-bear">DOWNTREND</span>
+        </div>
+        <svg class="chart-card-svg" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="220" fill="#0f1117"/>
+          <line x1="0" y1="55" x2="480" y2="55" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="0" y1="110" x2="480" y2="110" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="0" y1="165" x2="480" y2="165" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <!-- price path down -->
+          <polyline points="30,28 70,58 100,45 145,80 175,66 225,105 255,90 305,130 335,116 385,158 415,143 460,182" fill="none" stroke="#ff5252" stroke-width="2.5"/>
+          <polygon points="30,28 70,58 100,45 145,80 175,66 225,105 255,90 305,130 335,116 385,158 415,143 460,182 460,20 30,20" fill="rgba(255,82,82,0.06)"/>
+          <!-- LL labels -->
+          <circle cx="145" cy="80" r="4" fill="#ff5252"/>
+          <text x="148" y="92" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text>
+          <circle cx="225" cy="105" r="4" fill="#ff5252"/>
+          <text x="228" y="117" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text>
+          <circle cx="305" cy="130" r="4" fill="#ff5252"/>
+          <text x="308" y="142" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text>
+          <circle cx="385" cy="158" r="4" fill="#ff5252"/>
+          <text x="388" y="170" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LL</text>
+          <!-- LH labels -->
+          <circle cx="70" cy="58" r="4" fill="#f5a623"/>
+          <text x="52" y="50" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text>
+          <circle cx="175" cy="66" r="4" fill="#f5a623"/>
+          <text x="157" y="58" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text>
+          <circle cx="255" cy="90" r="4" fill="#f5a623"/>
+          <text x="237" y="82" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text>
+          <circle cx="335" cy="116" r="4" fill="#f5a623"/>
+          <text x="317" y="108" fill="#f5a623" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">LH</text>
+          <line x1="40" y1="22" x2="450" y2="190" stroke="rgba(255,82,82,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <text x="380" y="200" fill="rgba(255,82,82,0.6)" font-size="10" font-family="JetBrains Mono,monospace">TREND ↘</text>
+        </svg>
+        <div class="chart-card-desc"><strong>Lower Highs + Lower Lows = Downtrend.</strong> Only look for <strong>SELL</strong> setups. Each bounce to a Lower High is a potential short entry. Do not buy against a confirmed downtrend.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 2: Support & Resistance ── -->
+  <div class="strat-section">
+    <div class="strat-section-header">
+      <div class="strat-num green">2</div>
+      <div>
+        <div class="strat-sec-title">Support & Resistance Levels</div>
+        <div class="strat-sec-sub">The foundation of every trade — price respects these zones repeatedly</div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-bottom:16px">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Key S/R Zones on XAU/USD — H1 Example</div>
+        <span class="chart-card-badge badge-gold">GOLD LEVELS</span>
+      </div>
+      <svg class="chart-card-svg" viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="270" fill="#0f1117"/>
+        <!-- resistance zone top -->
+        <rect x="0" y="36" width="700" height="14" fill="rgba(255,82,82,0.08)"/>
+        <line x1="0" y1="36" x2="700" y2="36" stroke="rgba(255,82,82,0.5)" stroke-width="1" stroke-dasharray="5,3"/>
+        <line x1="0" y1="50" x2="700" y2="50" stroke="rgba(255,82,82,0.3)" stroke-width="1" stroke-dasharray="5,3"/>
+        <text x="8" y="46" fill="#ff5252" font-size="10" font-family="JetBrains Mono,monospace" font-weight="600">RESISTANCE ZONE · $3,120</text>
+        <!-- support zone bottom -->
+        <rect x="0" y="210" width="700" height="14" fill="rgba(0,214,143,0.08)"/>
+        <line x1="0" y1="210" x2="700" y2="210" stroke="rgba(0,214,143,0.5)" stroke-width="1" stroke-dasharray="5,3"/>
+        <line x1="0" y1="224" x2="700" y2="224" stroke="rgba(0,214,143,0.3)" stroke-width="1" stroke-dasharray="5,3"/>
+        <text x="8" y="220" fill="#00d68f" font-size="10" font-family="JetBrains Mono,monospace" font-weight="600">SUPPORT ZONE · $3,060</text>
+        <!-- mid zone -->
+        <rect x="0" y="128" width="700" height="12" fill="rgba(255,209,102,0.06)"/>
+        <line x1="0" y1="128" x2="700" y2="128" stroke="rgba(255,209,102,0.4)" stroke-width="1" stroke-dasharray="5,3"/>
+        <line x1="0" y1="140" x2="700" y2="140" stroke="rgba(255,209,102,0.25)" stroke-width="1" stroke-dasharray="5,3"/>
+        <text x="8" y="137" fill="#ffd166" font-size="10" font-family="JetBrains Mono,monospace" font-weight="600">PIVOT / MID LEVEL · $3,090</text>
+
+        <!-- candles — price bouncing off support, rejecting resistance -->
+        <!-- candle helper: x, open, close, high, low — bullish=green, bearish=red -->
+        <!-- group 1: rising to resistance -->
+        <line x1="60" y1="195" x2="60" y2="235" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="54" y="195" width="12" height="28" fill="#00d68f"/>
+        <line x1="90" y1="180" x2="90" y2="218" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="84" y="180" width="12" height="25" fill="#00d68f"/>
+        <line x1="120" y1="160" x2="120" y2="200" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="114" y="160" width="12" height="24" fill="#00d68f"/>
+        <line x1="150" y1="140" x2="150" y2="178" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="144" y="140" width="12" height="22" fill="#00d68f"/>
+        <!-- rejection at resistance -->
+        <line x1="180" y1="32" x2="180" y2="115" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="174" y="55" width="12" height="40" fill="#ff5252"/>
+        <text x="168" y="28" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace">REJECT</text>
+        <!-- drop back down -->
+        <line x1="210" y1="80" x2="210" y2="120" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="204" y="80" width="12" height="28" fill="#ff5252"/>
+        <line x1="240" y1="110" x2="240" y2="155" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="234" y="110" width="12" height="30" fill="#ff5252"/>
+        <!-- bounce at support -->
+        <line x1="270" y1="196" x2="270" y2="240" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="264" y="196" width="12" height="28" fill="none" stroke="#00d68f" stroke-width="1.5"/>
+        <line x1="300" y1="180" x2="300" y2="228" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="294" y="180" width="12" height="30" fill="#00d68f"/>
+        <text x="262" y="256" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace">BOUNCE</text>
+        <!-- rise again to mid -->
+        <line x1="330" y1="158" x2="330" y2="198" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="324" y="158" width="12" height="28" fill="#00d68f"/>
+        <line x1="360" y1="135" x2="360" y2="175" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="354" y="135" width="12" height="26" fill="#00d68f"/>
+        <!-- reject at mid -->
+        <line x1="390" y1="120" x2="390" y2="158" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="384" y="120" width="12" height="26" fill="#ff5252"/>
+        <!-- back down -->
+        <line x1="420" y1="138" x2="420" y2="180" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="414" y="138" width="12" height="28" fill="#ff5252"/>
+        <line x1="450" y1="158" x2="450" y2="200" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="444" y="158" width="12" height="24" fill="#ff5252"/>
+        <!-- bounce at support again -->
+        <line x1="480" y1="194" x2="480" y2="240" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="474" y="194" width="12" height="28" fill="#00d68f"/>
+        <line x1="510" y1="172" x2="510" y2="216" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="504" y="172" width="12" height="30" fill="#00d68f"/>
+        <line x1="540" y1="150" x2="540" y2="194" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="534" y="150" width="12" height="28" fill="#00d68f"/>
+        <!-- breakout attempt -->
+        <line x1="570" y1="120" x2="570" y2="158" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="564" y="120" width="12" height="24" fill="#00d68f"/>
+        <line x1="600" y1="88" x2="600" y2="128" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="594" y="88" width="12" height="26" fill="#00d68f"/>
+        <line x1="630" y1="55" x2="630" y2="98" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="624" y="55" width="12" height="30" fill="#00d68f"/>
+        <text x="615" y="48" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="600">BREAK!</text>
+        <!-- breakout arrow -->
+        <line x1="638" y1="50" x2="680" y2="22" stroke="rgba(0,214,143,0.5)" stroke-width="1.5" marker-end="url(#arr)"/>
+        <defs>
+          <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="rgba(0,214,143,0.8)"/>
+          </marker>
+        </defs>
+      </svg>
+      <div class="chart-card-desc">
+        <strong>How to use S/R:</strong> Mark zones where price has reversed <strong>at least 2–3 times</strong>. The more touches, the stronger the level. Trade the <em>reaction</em> at the level, not in advance. Wait for a confirmation candle before entering.
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 3: Entry Setups ── -->
+  <div class="strat-section">
+    <div class="strat-section-header">
+      <div class="strat-num blue">3</div>
+      <div>
+        <div class="strat-sec-title">Entry Setups</div>
+        <div class="strat-sec-sub">Three high-probability patterns that repeat on Gold daily</div>
+      </div>
+    </div>
+
+    <!-- Setup A: Pin Bar -->
+    <div class="chart-card" style="margin-bottom:14px">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Setup A — Pin Bar Reversal</div>
+        <span class="chart-card-badge badge-bull">BUY &amp; SELL</span>
+      </div>
+      <svg class="chart-card-svg" viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="230" fill="#0f1117"/>
+        <!-- support line -->
+        <line x1="0" y1="178" x2="700" y2="178" stroke="rgba(0,214,143,0.35)" stroke-width="1" stroke-dasharray="5,3"/>
+        <text x="8" y="173" fill="rgba(0,214,143,0.6)" font-size="9" font-family="JetBrains Mono,monospace">SUPPORT</text>
+        <!-- resistance line -->
+        <line x1="0" y1="62" x2="700" y2="62" stroke="rgba(255,82,82,0.35)" stroke-width="1" stroke-dasharray="5,3"/>
+        <text x="8" y="57" fill="rgba(255,82,82,0.6)" font-size="9" font-family="JetBrains Mono,monospace">RESISTANCE</text>
+
+        <!-- LEFT: Bullish Pin Bar at support -->
+        <text x="80" y="20" fill="var(--text2)" font-size="11" font-family="JetBrains Mono,monospace" text-anchor="middle">BULLISH PIN BAR</text>
+        <!-- preceding candles -->
+        <line x1="30" y1="140" x2="30" y2="160" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="24" y="140" width="12" height="14" fill="#ff5252"/>
+        <line x1="55" y1="150" x2="55" y2="170" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="49" y="150" width="12" height="14" fill="#ff5252"/>
+        <!-- pin bar — long lower wick into support -->
+        <line x1="80" y1="160" x2="80" y2="210" stroke="#00d68f" stroke-width="2"/>
+        <rect x="74" y="160" width="12" height="8" fill="#00d68f"/>
+        <text x="96" y="215" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="700">PIN BAR</text>
+        <text x="96" y="225" fill="rgba(0,214,143,0.6)" font-size="8" font-family="JetBrains Mono,monospace">long wick = rejection</text>
+        <!-- entry marker -->
+        <line x1="74" y1="160" x2="60" y2="160" stroke="rgba(0,214,143,0.5)" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="4" y="163" fill="#00d68f" font-size="8" font-family="JetBrains Mono,monospace">ENTRY</text>
+        <!-- follow-up candles -->
+        <line x1="105" y1="142" x2="105" y2="162" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="99" y="142" width="12" height="16" fill="#00d68f"/>
+        <line x1="130" y1="118" x2="130" y2="145" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="124" y="118" width="12" height="22" fill="#00d68f"/>
+        <line x1="155" y1="98" x2="155" y2="122" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="149" y="98" width="12" height="20" fill="#00d68f"/>
+        <!-- SL / TP arrows -->
+        <line x1="80" y1="213" x2="155" y2="213" stroke="rgba(255,82,82,0.5)" stroke-width="1"/>
+        <text x="93" y="222" fill="#ff5252" font-size="8" font-family="JetBrains Mono,monospace">SL below wick</text>
+        <line x1="155" y1="68" x2="80" y2="68" stroke="rgba(0,214,143,0.5)" stroke-width="1"/>
+        <text x="86" y="64" fill="#00d68f" font-size="8" font-family="JetBrains Mono,monospace">TP at resistance</text>
+
+        <!-- divider -->
+        <line x1="340" y1="10" x2="340" y2="220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+        <!-- RIGHT: Bearish Pin Bar at resistance -->
+        <text x="530" y="20" fill="var(--text2)" font-size="11" font-family="JetBrains Mono,monospace" text-anchor="middle">BEARISH PIN BAR</text>
+        <!-- preceding candles -->
+        <line x1="380" y1="88" x2="380" y2="108" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="374" y="88" width="12" height="14" fill="#00d68f"/>
+        <line x1="405" y1="76" x2="405" y2="96" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="399" y="76" width="12" height="14" fill="#00d68f"/>
+        <!-- bearish pin bar — long upper wick -->
+        <line x1="430" y1="30" x2="430" y2="80" stroke="#ff5252" stroke-width="2"/>
+        <rect x="424" y="72" width="12" height="8" fill="#ff5252"/>
+        <text x="446" y="32" fill="#ff5252" font-size="9" font-family="JetBrains Mono,monospace" font-weight="700">PIN BAR</text>
+        <text x="446" y="42" fill="rgba(255,82,82,0.6)" font-size="8" font-family="JetBrains Mono,monospace">long wick = rejection</text>
+        <line x1="424" y1="80" x2="410" y2="80" stroke="rgba(255,82,82,0.5)" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="354" y="83" fill="#ff5252" font-size="8" font-family="JetBrains Mono,monospace">ENTRY</text>
+        <!-- follow-up candles -->
+        <line x1="455" y1="90" x2="455" y2="110" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="449" y="90" width="12" height="14" fill="#ff5252"/>
+        <line x1="480" y1="108" x2="480" y2="132" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="474" y="108" width="12" height="18" fill="#ff5252"/>
+        <line x1="505" y1="130" x2="505" y2="158" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="499" y="130" width="12" height="20" fill="#ff5252"/>
+        <!-- SL TP -->
+        <line x1="430" y1="27" x2="505" y2="27" stroke="rgba(255,82,82,0.5)" stroke-width="1"/>
+        <text x="440" y="23" fill="#ff5252" font-size="8" font-family="JetBrains Mono,monospace">SL above wick</text>
+        <line x1="505" y1="172" x2="430" y2="172" stroke="rgba(0,214,143,0.5)" stroke-width="1"/>
+        <text x="436" y="184" fill="#00d68f" font-size="8" font-family="JetBrains Mono,monospace">TP at support</text>
+      </svg>
+      <div class="chart-card-desc">A <strong>Pin Bar</strong> has a small body with a long wick that pierces through a key level and closes back. The long wick shows <strong>strong rejection</strong>. Enter on the close of the pin bar candle. Stop loss goes beyond the wick tip.</div>
+    </div>
+
+    <!-- Setup B: Break & Retest -->
+    <div class="chart-card" style="margin-bottom:14px">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Setup B — Break &amp; Retest (BnR)</div>
+        <span class="chart-card-badge badge-bull">HIGH PROBABILITY</span>
+      </div>
+      <svg class="chart-card-svg" viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="250" fill="#0f1117"/>
+        <!-- old resistance becomes support after break -->
+        <line x1="0" y1="130" x2="700" y2="130" stroke="rgba(255,209,102,0.5)" stroke-width="1.5" stroke-dasharray="6,3"/>
+        <text x="8" y="124" fill="rgba(255,209,102,0.7)" font-size="9" font-family="JetBrains Mono,monospace">OLD RESISTANCE → NEW SUPPORT</text>
+
+        <!-- price approaching from below -->
+        <line x1="30" y1="192" x2="30" y2="215" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="24" y="192" width="12" height="18" fill="#00d68f"/>
+        <line x1="55" y1="178" x2="55" y2="200" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="49" y="178" width="12" height="17" fill="#00d68f"/>
+        <line x1="80" y1="162" x2="80" y2="185" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="74" y="162" width="12" height="16" fill="#00d68f"/>
+
+        <!-- breakout candle -->
+        <line x1="110" y1="112" x2="110" y2="175" stroke="#00d68f" stroke-width="2"/>
+        <rect x="104" y="112" width="12" height="40" fill="#00d68f"/>
+        <text x="88" y="108" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="700">BREAK!</text>
+
+        <!-- candles above level (consolidation) -->
+        <line x1="140" y1="92" x2="140" y2="118" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="134" y="92" width="12" height="18" fill="#ff5252"/>
+        <line x1="165" y1="98" x2="165" y2="120" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="159" y="98" width="12" height="14" fill="#00d68f"/>
+        <line x1="190" y1="103" x2="190" y2="122" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="184" y="103" width="12" height="15" fill="#ff5252"/>
+
+        <!-- retest — price comes back to level -->
+        <line x1="220" y1="110" x2="220" y2="140" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="214" y="110" width="12" height="22" fill="#ff5252"/>
+        <line x1="245" y1="118" x2="245" y2="148" stroke="#ff5252" stroke-width="1.5"/>
+        <rect x="239" y="118" width="12" height="24" fill="#ff5252"/>
+
+        <!-- pin at level (retest candle) -->
+        <line x1="275" y1="108" x2="275" y2="158" stroke="#00d68f" stroke-width="2"/>
+        <rect x="269" y="108" width="12" height="16" fill="#00d68f"/>
+        <!-- entry zone highlight -->
+        <rect x="260" y="124" width="30" height="18" fill="rgba(0,214,143,0.08)" stroke="rgba(0,214,143,0.3)" stroke-width="1" stroke-dasharray="3,2" rx="3"/>
+        <text x="252" y="155" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="700">RETEST</text>
+        <text x="252" y="165" fill="rgba(0,214,143,0.6)" font-size="8" font-family="JetBrains Mono,monospace">ENTRY HERE</text>
+
+        <!-- continuation up -->
+        <line x1="310" y1="88" x2="310" y2="118" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="304" y="88" width="12" height="22" fill="#00d68f"/>
+        <line x1="335" y1="72" x2="335" y2="100" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="329" y="72" width="12" height="22" fill="#00d68f"/>
+        <line x1="360" y1="52" x2="360" y2="82" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="354" y="52" width="12" height="22" fill="#00d68f"/>
+        <line x1="385" y1="35" x2="385" y2="62" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="379" y="35" width="12" height="20" fill="#00d68f"/>
+
+        <!-- SL/TP lines -->
+        <line x1="275" y1="160" x2="390" y2="160" stroke="rgba(255,82,82,0.4)" stroke-width="1"/>
+        <text x="278" y="172" fill="#ff5252" font-size="8" font-family="JetBrains Mono,monospace">SL — below level</text>
+        <line x1="390" y1="38" x2="275" y2="38" stroke="rgba(0,214,143,0.4)" stroke-width="1"/>
+        <text x="278" y="35" fill="#00d68f" font-size="8" font-family="JetBrains Mono,monospace">TP — next resistance</text>
+
+        <!-- divider -->
+        <line x1="470" y1="10" x2="470" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+        <!-- explanation text right side -->
+        <text x="490" y="40" fill="var(--text2)" font-size="11" font-family="JetBrains Mono,monospace" font-weight="600">3 STEPS:</text>
+        <rect x="485" y="52" width="3" height="3" fill="#ffd166"/>
+        <text x="495" y="58" fill="var(--text2)" font-size="10" font-family="JetBrains Mono,monospace">1. Price breaks key level</text>
+        <rect x="485" y="72" width="3" height="3" fill="#ffd166"/>
+        <text x="495" y="78" fill="var(--text2)" font-size="10" font-family="JetBrains Mono,monospace">2. Consolidates above it</text>
+        <rect x="485" y="92" width="3" height="3" fill="#ffd166"/>
+        <text x="495" y="98" fill="var(--text2)" font-size="10" font-family="JetBrains Mono,monospace">3. Retests level as new S/R</text>
+        <text x="490" y="125" fill="#00d68f" font-size="10" font-family="JetBrains Mono,monospace" font-weight="600">ENTRY: On retest candle</text>
+        <text x="490" y="142" fill="#ff5252" font-size="10" font-family="JetBrains Mono,monospace">SL: Below / Above level</text>
+        <text x="490" y="159" fill="#00d68f" font-size="10" font-family="JetBrains Mono,monospace">TP: Next S/R zone</text>
+        <text x="490" y="185" fill="var(--text3)" font-size="9" font-family="JetBrains Mono,monospace">Min R:R = 1.5:1</text>
+        <text x="490" y="200" fill="var(--text3)" font-size="9" font-family="JetBrains Mono,monospace">Best on: H1 / H4</text>
+        <text x="490" y="215" fill="var(--text3)" font-size="9" font-family="JetBrains Mono,monospace">Session: London / NY</text>
+      </svg>
+      <div class="chart-card-desc">The Break &amp; Retest is one of the most <strong>reliable setups on Gold</strong>. Old resistance flips to new support (and vice versa). Wait for price to retest the broken level and show a rejection candle. Enter with a tight stop below the level.</div>
+    </div>
+
+    <!-- Setup C: Inside Bar -->
+    <div class="chart-card" style="margin-bottom:14px">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Setup C — Inside Bar Breakout</div>
+        <span class="chart-card-badge badge-neutral">CONTINUATION</span>
+      </div>
+      <svg class="chart-card-svg" viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="220" fill="#0f1117"/>
+        <!-- trend direction -->
+        <text x="20" y="18" fill="rgba(0,214,143,0.5)" font-size="9" font-family="JetBrains Mono,monospace">UPTREND CONTEXT</text>
+
+        <!-- some trending candles -->
+        <line x1="30" y1="168" x2="30" y2="190" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="24" y="168" width="12" height="15" fill="#00d68f"/>
+        <line x1="55" y1="148" x2="55" y2="172" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="49" y="148" width="12" height="18" fill="#00d68f"/>
+        <line x1="80" y1="128" x2="80" y2="152" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="74" y="128" width="12" height="18" fill="#00d68f"/>
+
+        <!-- Mother bar (big bullish candle) -->
+        <line x1="115" y1="96" x2="115" y2="145" stroke="#00d68f" stroke-width="2"/>
+        <rect x="108" y="96" width="14" height="36" fill="#00d68f"/>
+        <text x="102" y="88" fill="#ffd166" font-size="9" font-family="JetBrains Mono,monospace" font-weight="700">MOTHER BAR</text>
+
+        <!-- Inside bar (smaller, contained within mother) -->
+        <line x1="148" y1="104" x2="148" y2="136" stroke="#ff5252" stroke-width="2"/>
+        <rect x="141" y="104" width="14" height="22" fill="#ff5252"/>
+        <text x="136" y="152" fill="#ffd166" font-size="9" font-family="JetBrains Mono,monospace" font-weight="700">INSIDE BAR</text>
+        <text x="136" y="162" fill="rgba(255,209,102,0.5)" font-size="8" font-family="JetBrains Mono,monospace">(fits inside mother)</text>
+
+        <!-- box around inside bar showing containment -->
+        <rect x="105" y="93" width="60" height="55" fill="none" stroke="rgba(255,209,102,0.25)" stroke-width="1" stroke-dasharray="4,3" rx="3"/>
+
+        <!-- breakout candle -->
+        <line x1="182" y1="74" x2="182" y2="116" stroke="#00d68f" stroke-width="2.5"/>
+        <rect x="175" y="74" width="14" height="30" fill="#00d68f"/>
+        <text x="165" y="68" fill="#00d68f" font-size="9" font-family="JetBrains Mono,monospace" font-weight="700">BREAKOUT</text>
+
+        <!-- entry arrow -->
+        <line x1="175" y1="96" x2="152" y2="96" stroke="rgba(0,214,143,0.5)" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="100" y="100" fill="#00d68f" font-size="8" font-family="JetBrains Mono,monospace">ENTRY</text>
+
+        <!-- continuation -->
+        <line x1="212" y1="58" x2="212" y2="86" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="206" y="58" width="12" height="20" fill="#00d68f"/>
+        <line x1="237" y1="40" x2="237" y2="68" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="231" y="40" width="12" height="20" fill="#00d68f"/>
+        <line x1="262" y1="25" x2="262" y2="50" stroke="#00d68f" stroke-width="1.5"/>
+        <rect x="256" y="25" width="12" height="18" fill="#00d68f"/>
+
+        <!-- SL line -->
+        <line x1="108" y1="148" x2="270" y2="148" stroke="rgba(255,82,82,0.35)" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="275" y="151" fill="#ff5252" font-size="8" font-family="JetBrains Mono,monospace">SL — below mother bar low</text>
+
+        <!-- divider -->
+        <line x1="380" y1="10" x2="380" y2="210" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+        <!-- Rules right side -->
+        <text x="400" y="30" fill="var(--text2)" font-size="11" font-family="JetBrains Mono,monospace" font-weight="700">HOW TO TRADE IT</text>
+        <text x="400" y="55" fill="var(--text3)" font-size="10" font-family="JetBrains Mono,monospace">① Identify large "mother" candle</text>
+        <text x="400" y="75" fill="var(--text3)" font-size="10" font-family="JetBrains Mono,monospace">② Wait for inside bar to form</text>
+        <text x="400" y="95" fill="var(--text3)" font-size="10" font-family="JetBrains Mono,monospace">   (body + wicks inside mother)</text>
+        <text x="400" y="115" fill="var(--text3)" font-size="10" font-family="JetBrains Mono,monospace">③ Enter on break of mother</text>
+        <text x="400" y="135" fill="var(--text3)" font-size="10" font-family="JetBrains Mono,monospace">   bar high (bull) or low (bear)</text>
+        <rect x="395" y="152" width="3" height="3" fill="#00d68f"/>
+        <text x="405" y="158" fill="#00d68f" font-size="10" font-family="JetBrains Mono,monospace">Best on: H1, H4, Daily</text>
+        <rect x="395" y="170" width="3" height="3" fill="#ffd166"/>
+        <text x="405" y="176" fill="#ffd166" font-size="10" font-family="JetBrains Mono,monospace">Works best in trending mkts</text>
+        <rect x="395" y="188" width="3" height="3" fill="#ff5252"/>
+        <text x="405" y="194" fill="#ff5252" font-size="10" font-family="JetBrains Mono,monospace">Avoid in choppy / ranging</text>
+      </svg>
+      <div class="chart-card-desc">An <strong>Inside Bar</strong> represents a pause / compression in the trend. The smaller bar is fully contained within the prior bar's range. Enter when price breaks the mother bar in the direction of the trend. Target R:R of <strong>at least 2:1</strong>.</div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 4: Risk Management ── -->
+  <div class="strat-section">
+    <div class="strat-section-header">
+      <div class="strat-num red">4</div>
+      <div>
+        <div class="strat-sec-title">Risk Management</div>
+        <div class="strat-sec-sub">Protect the capital — this is what separates winners from losers</div>
+      </div>
+    </div>
+
+    <!-- RR Visual -->
+    <div class="rr-visual">
+      <div class="cl-title">Reward:Risk Ratio — Why 2:1 Minimum?</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:14px;line-height:1.7">
+        With a <strong style="color:var(--text)">2:1 R:R</strong>, you only need to win <strong style="color:var(--green)">34%</strong> of trades to break even. At 50% win rate you profit significantly. Never take a trade below 1.5:1.
+      </div>
+      <div style="font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em">Visualizing 2:1 R:R</div>
+      <div class="rr-bar-wrap">
+        <div class="rr-loss-bar" style="flex:1">STOP LOSS · 1R</div>
+        <div class="rr-win-bar" style="flex:2">TAKE PROFIT · 2R</div>
+      </div>
+      <div class="rr-labels">
+        <span>Entry</span><span>SL (−1R)</span><span style="margin-left:auto">TP (+2R)</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px">
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">Win Rate Needed</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--green)">33%</div>
+          <div style="font-size:10px;color:var(--text3)">to break even @ 2:1</div>
+        </div>
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">At 50% WR</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--gold)">+50%</div>
+          <div style="font-size:10px;color:var(--text3)">net gain per 10 trades</div>
+        </div>
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">Max Risk / Trade</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--red)">2%</div>
+          <div style="font-size:10px;color:var(--text3)">of account capital</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules-grid">
+      <div class="rule-card"><div class="rule-icon">🛑</div><div><div class="rule-title">Always Use a Stop Loss</div><div class="rule-body">Place SL immediately on entry. No exceptions. On Gold, minimum 15–20 pips above/below the level to avoid stop hunting. Never move SL against your trade.</div></div></div>
+      <div class="rule-card"><div class="rule-icon">🎯</div><div><div class="rule-title">Set TP Before Entry</div><div class="rule-body">Know your target before clicking Buy/Sell. Target the next key S/R level. Partial profit at 1:1, move SL to breakeven, let rest run to 2:1 or beyond.</div></div></div>
+      <div class="rule-card"><div class="rule-icon">📏</div><div><div class="rule-title">Position Sizing</div><div class="rule-body">Calculate lot size based on SL distance and account risk %. With $5 capital and 2% risk = $0.10 max loss per trade. Use the Lot Calculator in Real Time tab.</div></div></div>
+      <div class="rule-card"><div class="rule-icon">🚫</div><div><div class="rule-title">Max 1 Trade at a Time</div><div class="rule-body">While account is under $100, only carry one open position. Overlapping trades compound drawdown. Focus on quality over quantity — one perfect trade per day is enough.</div></div></div>
+      <div class="rule-card"><div class="rule-icon">📉</div><div><div class="rule-title">Daily Loss Limit</div><div class="rule-body">Stop trading after losing 3–5% of capital in one day. Come back tomorrow fresh. Revenge trading after losses is the #1 account killer — hard rule, no exceptions.</div></div></div>
+      <div class="rule-card"><div class="rule-icon">🔄</div><div><div class="rule-title">Breakeven + Trail</div><div class="rule-body">Once price moves 1R in your favor, move SL to entry (breakeven). Then trail the stop using structure — behind each new HL in an uptrend, locking in profit as it forms.</div></div></div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 5: Sessions & Timing ── -->
+  <div class="strat-section">
+    <div class="strat-section-header">
+      <div class="strat-num gold">5</div>
+      <div>
+        <div class="strat-sec-title">Best Sessions to Trade Gold</div>
+        <div class="strat-sec-sub">Timing matters — 80% of moves happen in 20% of the day</div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-bottom:16px">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Gold Volatility by Session (UTC)</div>
+        <span class="chart-card-badge badge-gold">XAU/USD</span>
+      </div>
+      <svg class="chart-card-svg" viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="200" fill="#0f1117"/>
+        <!-- session bands -->
+        <!-- Asian: 0–8 UTC (low vol) -->
+        <rect x="0" y="0" width="233" height="200" fill="rgba(94,129,244,0.04)"/>
+        <text x="10" y="18" fill="rgba(94,129,244,0.6)" font-size="10" font-family="JetBrains Mono,monospace" font-weight="600">ASIAN  00:00–08:00</text>
+        <!-- London: 8–17 UTC (high vol) -->
+        <rect x="233" y="0" width="263" height="200" fill="rgba(255,209,102,0.06)"/>
+        <text x="243" y="18" fill="rgba(255,209,102,0.8)" font-size="10" font-family="JetBrains Mono,monospace" font-weight="600">LONDON  08:00–17:00</text>
+        <!-- NY: 13–22 UTC (high vol) -->
+        <rect x="379" y="0" width="263" height="200" fill="rgba(0,214,143,0.05)"/>
+        <text x="460" y="18" fill="rgba(0,214,143,0.7)" font-size="10" font-family="JetBrains Mono,monospace" font-weight="600">NEW YORK  13:00–22:00</text>
+        <!-- overlap band -->
+        <rect x="379" y="0" width="117" height="200" fill="rgba(0,214,143,0.07)"/>
+        <text x="385" y="35" fill="rgba(0,214,143,0.5)" font-size="8" font-family="JetBrains Mono,monospace">OVERLAP</text>
+        <text x="385" y="45" fill="rgba(0,214,143,0.5)" font-size="8" font-family="JetBrains Mono,monospace">13–17 UTC</text>
+
+        <!-- session dividers -->
+        <line x1="233" y1="0" x2="233" y2="200" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="496" y1="0" x2="496" y2="200" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="379" y1="0" x2="379" y2="200" stroke="rgba(0,214,143,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <!-- volatility bars -->
+        <!-- Asian - low -->
+        <rect x="20" y="130" width="193" height="40" rx="4" fill="rgba(94,129,244,0.25)" stroke="rgba(94,129,244,0.3)" stroke-width="1"/>
+        <text x="116" y="154" fill="#5e81f4" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="600">LOW VOLUME</text>
+        <text x="116" y="168" fill="rgba(94,129,244,0.7)" font-size="9" font-family="JetBrains Mono,monospace" text-anchor="middle">Avoid trading · Wait</text>
+
+        <!-- London - high -->
+        <rect x="248" y="80" width="120" height="90" rx="4" fill="rgba(255,209,102,0.2)" stroke="rgba(255,209,102,0.35)" stroke-width="1"/>
+        <text x="308" y="120" fill="#ffd166" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="600">HIGH VOL</text>
+        <text x="308" y="134" fill="rgba(255,209,102,0.7)" font-size="9" font-family="JetBrains Mono,monospace" text-anchor="middle">Best setups</text>
+        <text x="308" y="148" fill="rgba(255,209,102,0.7)" font-size="9" font-family="JetBrains Mono,monospace" text-anchor="middle">08:00–11:00</text>
+        <rect x="375" y="72" width="4" height="98" rx="2" fill="rgba(255,209,102,0.4)"/>
+
+        <!-- Overlap - highest -->
+        <rect x="385" y="58" width="100" height="112" rx="4" fill="rgba(0,214,143,0.2)" stroke="rgba(0,214,143,0.35)" stroke-width="1"/>
+        <text x="435" y="100" fill="#00d68f" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="600">HIGHEST</text>
+        <text x="435" y="114" fill="rgba(0,214,143,0.7)" font-size="9" font-family="JetBrains Mono,monospace" text-anchor="middle">Best entries</text>
+        <text x="435" y="128" fill="rgba(0,214,143,0.7)" font-size="9" font-family="JetBrains Mono,monospace" text-anchor="middle">13:00–17:00</text>
+        <text x="435" y="142" fill="rgba(0,214,143,0.5)" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle">London+NY</text>
+        <rect x="492" y="58" width="4" height="112" rx="2" fill="rgba(0,214,143,0.4)"/>
+
+        <!-- NY -->
+        <rect x="510" y="90" width="150" height="80" rx="4" fill="rgba(0,214,143,0.12)" stroke="rgba(0,214,143,0.2)" stroke-width="1"/>
+        <text x="585" y="128" fill="rgba(0,214,143,0.8)" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="600">MED–HIGH</text>
+        <text x="585" y="142" fill="rgba(0,214,143,0.5)" font-size="9" font-family="JetBrains Mono,monospace" text-anchor="middle">13:30–16:00 NY</text>
+
+        <!-- UTC hour markers -->
+        <text x="0" y="196" fill="var(--text3)" font-size="8" font-family="JetBrains Mono,monospace">00:00</text>
+        <text x="221" y="196" fill="var(--text3)" font-size="8" font-family="JetBrains Mono,monospace">08:00</text>
+        <text x="367" y="196" fill="var(--text3)" font-size="8" font-family="JetBrains Mono,monospace">13:00</text>
+        <text x="484" y="196" fill="var(--text3)" font-size="8" font-family="JetBrains Mono,monospace">17:00</text>
+        <text x="660" y="196" fill="var(--text3)" font-size="8" font-family="JetBrains Mono,monospace">24:00</text>
+      </svg>
+      <div class="candle-legend">
+        <div class="cleg-item"><div style="width:12px;height:12px;background:rgba(94,129,244,0.3);border-radius:3px"></div>Asian — Low Vol</div>
+        <div class="cleg-item"><div style="width:12px;height:12px;background:rgba(255,209,102,0.3);border-radius:3px"></div>London — Best Setups</div>
+        <div class="cleg-item"><div style="width:12px;height:12px;background:rgba(0,214,143,0.3);border-radius:3px"></div>NY Overlap — Highest Vol</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 6: Entry Checklist ── -->
+  <div class="strat-section">
+    <div class="strat-section-header">
+      <div class="strat-num blue">6</div>
+      <div>
+        <div class="strat-sec-title">Pre-Trade Checklist</div>
+        <div class="strat-sec-sub">Run through every item before placing any order</div>
+      </div>
+    </div>
+
+    <div class="checklist">
+      <div class="cl-title">✅ All boxes must be checked before entering a trade</div>
+      <div class="cl-items">
+        <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>Trend identified</strong> — I know if Gold is in an uptrend, downtrend, or ranging on H1/H4</div></div>
+        <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>Key level present</strong> — My entry is at a clear S/R zone, not random in the middle</div></div>
+        <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>Setup confirmed</strong> — I see a Pin Bar, BnR, or Inside Bar pattern at the level</div></div>
+        <div class="cl-item"><div class="cl-check bull">✓</div><div class="cl-text"><strong>In correct session</strong> — I am trading during London or NY session (08:00–22:00 UTC)</div></div>
+        <div class="cl-item"><div class="cl-check risk">$</div><div class="cl-text"><strong>SL calculated</strong> — Stop loss is set beyond the level, sized to &lt;2% of capital</div></div>
+        <div class="cl-item"><div class="cl-check risk">$</div><div class="cl-text"><strong>TP set at 2:1+</strong> — Take profit is at next key level, minimum 2:1 reward-to-risk</div></div>
+        <div class="cl-item"><div class="cl-check risk">$</div><div class="cl-text"><strong>Lot size correct</strong> — Position sized so SL hit = &lt;2% loss, not more</div></div>
+        <div class="cl-item"><div class="cl-check bear">✗</div><div class="cl-text"><strong>No daily limit hit</strong> — I have not lost more than 5% today. If yes: close platform, done for the day</div></div>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:0">This strategy is designed for <strong style="color:var(--text)">price action trading on XAU/USD</strong> using H1 and H4 timeframes. It does not rely on indicators — only structure, levels, and candle patterns. Practice on a demo account until you can identify all setups consistently before trading real capital.</p>
+  </div>
+</div>
 
   </div><!-- /page-wrap -->
 </div><!-- /app -->

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: trading-journal-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false          # set manually in Render dashboard
+      - key: JWT_SECRET
+        sync: false          # set manually in Render dashboard
+      - key: ALLOWED_ORIGINS
+        sync: false          # set manually: your GitHub Pages URL
+      - key: NODE_ENV
+        value: production

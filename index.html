@@ -750,7 +750,7 @@ async function loadAllData() {
     // RT rows
     rtRows = Array.isArray(rows) && rows.length > 0
       ? rows.map(r => ({ pnl: r.pnl || 0, instrument: r.instrument || 'Gold (XAU/USD)' }))
-      : [{ pnl:0.15,instrument:'Gold (XAU/USD)' },{ pnl:-0.08,instrument:'Gold (XAU/USD)' },{ pnl:0.22,instrument:'Gold (XAU/USD)' }];
+      : [];
   } catch (e) {
     console.warn('Load error:', e.message);
     rtRows = rtRows.length ? rtRows : [];

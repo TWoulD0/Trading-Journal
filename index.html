@@ -214,7 +214,130 @@ tr.week-sep td{border-top:1px dashed rgba(94,129,244,.15)!important}
 .instr-select:focus{border-color:rgba(255,209,102,.4)}
 .instr-select option{background:var(--bg3);color:var(--text)}
 
-/* ══════════ STRATEGY ══════════ */
+/* ══════════ SCROLLABLE TABLE BODY ══════════ */
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* Wrapper that enables vertical scroll on tbody */
+.tbl-body-scroll{overflow-y:auto;max-height:520px;/* ~20 rows */display:block}
+.tbl-body-scroll::-webkit-scrollbar{width:5px;height:5px}
+.tbl-body-scroll::-webkit-scrollbar-track{background:var(--bg3);border-radius:3px}
+.tbl-body-scroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+.tbl-body-scroll::-webkit-scrollbar-thumb:hover{background:var(--text3)}
+/* Sticky header inside scrollable table */
+.tbl-body-scroll thead th{position:sticky;top:0;z-index:2;box-shadow:0 1px 0 var(--border)}
+/* Make table fill the scroll wrapper properly */
+.tbl-body-scroll table{width:100%;display:table}
+
+/* ══════════ FULL RESPONSIVE ══════════ */
+
+/* Nav — mobile */
+@media(max-width:768px){
+  .nav{padding:0 16px}
+  .nav-inner{height:52px;gap:8px}
+  .brand-sub{display:none}
+  .brand-name{font-size:13px}
+  .tab-group{padding:3px;gap:2px}
+  .tab-btn{padding:6px 10px;font-size:11px;gap:4px}
+  .tab-btn span{display:none}
+  .live-badge{display:none}
+  .user-email-nav{display:none}
+  .user-pill{padding:5px 8px}
+}
+
+@media(max-width:480px){
+  .tab-btn{padding:5px 8px;font-size:10px}
+  .brand-icon{width:26px;height:26px;font-size:12px}
+}
+
+/* Page wrap — mobile */
+@media(max-width:768px){
+  .page-wrap{padding:20px 14px 60px}
+}
+
+/* Auth card — mobile */
+@media(max-width:480px){
+  .auth-card{padding:28px 20px}
+  .auth-title{font-size:20px}
+  .auth-logo-name{font-size:15px}
+}
+
+/* h1 already uses clamp() — fine */
+
+/* EV strip — stack on mobile */
+@media(max-width:640px){
+  .ev-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:12px}
+  .ev-sep{display:none}
+  .ev-item{text-align:left}
+}
+@media(max-width:380px){
+  .ev-strip{grid-template-columns:1fr 1fr}
+}
+
+/* Metrics — smaller min on mobile */
+@media(max-width:480px){
+  .metrics-grid{grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px}
+  .metric-value{font-size:16px}
+}
+
+/* Chart height — shorter on mobile */
+@media(max-width:600px){
+  .chart-wrap{height:180px}
+}
+
+/* Journal settings — single col on small mobile */
+@media(max-width:380px){
+  .js-grid{grid-template-columns:1fr}
+}
+
+/* Table — reduce font and padding on mobile */
+@media(max-width:600px){
+  table{font-size:10.5px}
+  td,thead th{padding:6px 8px}
+  .rt-pnl-input{width:72px;font-size:10.5px}
+  .instr-select{font-size:10px;padding:2px 5px}
+  .ms-badge{font-size:9px;padding:1px 5px}
+  .bar-bg{width:50px}
+}
+
+/* Ctrl grid — already 1fr on 580px, fine */
+
+/* Strategy SVGs — allow horizontal scroll on tiny screens */
+@media(max-width:600px){
+  .chart-card-svg{min-width:480px}
+  .chart-card{overflow-x:auto}
+  .two-col{grid-template-columns:1fr}
+  .strat-intro{grid-template-columns:1fr}
+  .rules-grid{grid-template-columns:1fr}
+  .checklist .cl-items{grid-template-columns:1fr}
+  .rr-bar-wrap{height:28px}
+  .rr-loss-bar,.rr-win-bar{font-size:10px}
+}
+
+/* Progress chips — wrap nicely already */
+
+/* Table header bar — stack on mobile */
+@media(max-width:500px){
+  .table-header-bar{flex-direction:column;align-items:flex-start}
+  .add-row-btn{width:100%;justify-content:center}
+}
+
+/* Note text — smaller on mobile */
+@media(max-width:480px){
+  .note{font-size:10.5px}
+  .rt-note-strip{font-size:11px}
+}
+
+/* Remove hover lift on touch devices (no hover on mobile) */
+@media(hover:none){
+  .metric-card:hover{transform:none}
+  .strat-intro-card:hover{transform:none}
+  .rule-card:hover{border-color:var(--border)}
+}
+
+/* Scrollbar styling for horizontal table scroll */
+.tbl-scroll::-webkit-scrollbar{height:4px}
+.tbl-scroll::-webkit-scrollbar-track{background:transparent}
+.tbl-scroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
 .strat-intro{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:32px}
 @media(max-width:760px){.strat-intro{grid-template-columns:1fr}}
 .strat-intro-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;transition:border-color .2s,transform .2s}
@@ -429,7 +552,7 @@ tr.week-sep td{border-top:1px dashed rgba(94,129,244,.15)!important}
           <div class="table-title">Simulation Log</div>
           <div class="table-badge" id="v-row-badge">—</div>
         </div>
-        <div class="tbl-scroll">
+        <div class="tbl-scroll tbl-body-scroll">
           <table>
             <thead><tr>
               <th style="width:34px">#</th><th style="width:62px">Capital</th><th style="width:64px">Daily P&L</th>
@@ -491,7 +614,7 @@ tr.week-sep td{border-top:1px dashed rgba(94,129,244,.15)!important}
           <div class="table-title">Daily Log</div>
           <button class="add-row-btn" onclick="addRTRow()"><span style="font-size:15px">+</span> Add Trading Day</button>
         </div>
-        <div class="tbl-scroll">
+        <div class="tbl-scroll tbl-body-scroll">
           <table>
             <thead><tr>
               <th style="width:30px">#</th><th style="width:82px">Date</th><th style="width:70px">Capital</th>

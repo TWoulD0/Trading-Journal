@@ -258,6 +258,7 @@ tr.week-sep td{border-top:1px dashed rgba(94,129,244,.15)!important}
   .auth-card{padding:28px 20px}
   .auth-title{font-size:20px}
   .auth-logo-name{font-size:15px}
+  .brand-name{display:none}
 }
 
 /* h1 already uses clamp() — fine */
@@ -1622,8 +1623,7 @@ function simulateVision() {
   const fp=Math.min(100,(cap/target)*100);
   document.getElementById('v-prog-fill').style.width=Math.max(.5,fp)+'%';
   document.getElementById('v-prog-pct').textContent=fp.toFixed(1)+'%';
-  const tbody=document.getElementById('v-tbody'), show=vRows.slice(0,120);
-  document.getElementById('v-row-badge').textContent=`showing ${Math.min(120,vRows.length)} of ${vRows.length} rows`;
+  const tbody=document.getElementById('v-tbody'), show=vRows;  document.getElementById('v-row-badge').textContent=`${vRows.length} rows`;
   tbody.innerHTML=show.map(r=>{
     const pc=r.pnl>=0?'var(--green)':'var(--red)', ps=r.pnl>=0?'+':'';
     const nWRc=parseFloat(minWR.toFixed(0))<=wr*100?'win-high':'win-low';
@@ -1640,7 +1640,6 @@ function simulateVision() {
       <td><div class="bar-bg"><div class="bar-fg" style="width:${bw}%"></div></div><span style="font-size:9px;color:var(--text3);margin-left:4px">${bw}%</span></td>
       <td>${ms?`<span class="ms-badge">$${ms}</span>`:''}</td></tr>`;
   }).join('');
-  if(vRows.length>120){const last=vRows[vRows.length-1];tbody.innerHTML+=`<tr><td colspan="10" style="text-align:center;color:var(--text3);padding:10px;font-size:11px">··· ${vRows.length-120} more — final $${last.cap.toFixed(2)}</td></tr>`;}
   const sample=vRows.filter((_,i)=>i%Math.max(1,Math.floor(vRows.length/40))===0);
   const labels=sample.map(r=>'D'+r.day), data=sample.map(r=>parseFloat(r.cap.toFixed(2)));
   if(vChart){vChart.destroy();vChart=null;}
